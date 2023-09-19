@@ -1,32 +1,35 @@
-import { useBearStore } from '@/stores/zustand.store';
+import HeaderComponent from '@/components/home/header.component';
+import { MyPage } from '@/types/my-page.type';
 
-export default function Home() {
-  const { bears, increase, reset } = useBearStore();
+const Home: MyPage = () => {
+  // Variables
 
-  const returnSubComponent = () => {
-    return <>Bears {bears}</>;
-  };
+  // States
+
+  // Store
+
+  // GraphQL
 
   return (
     <>
-      <h1>Zustand</h1>
-      Bears {bears}
-      <button
-        type="button"
-        onClick={() => {
-          increase(1);
-        }}
-      >
-        Increase
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          reset();
-        }}
-      >
-        Reset
-      </button>
+      <div className="w-full">
+        <HeaderComponent />
+
+        <header className="h-screen w-full flex justify-start text-center">
+          <h1>Owl.Link</h1>
+        </header>
+
+        <section className="h-screen w-full flex justify-start text-center">
+          Section 2
+        </section>
+
+        <section className="h-screen w-full flex justify-start text-center">
+          Section 3
+        </section>
+      </div>
     </>
   );
-}
+};
+
+export default Home;
+Home.isProtected = false;
