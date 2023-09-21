@@ -1,4 +1,5 @@
 import HeaderComponent from '@/components/home/header.component';
+import Signup from '@/components/home/signup';
 import { MyPage } from '@/types/my-page.type';
 
 const Home: MyPage = () => {
@@ -12,24 +13,16 @@ const Home: MyPage = () => {
 
   return (
     <>
-      <div className="w-full">
+      <div className="h-full">
         <HeaderComponent />
 
-        <header className="h-screen w-full flex justify-start text-center">
-          <h1>Owl.Link</h1>
-        </header>
-
-        <section className="h-screen w-full flex justify-start text-center">
-          Section 2
-        </section>
-
-        <section className="h-screen w-full flex justify-start text-center">
-          Section 3
-        </section>
+        <Signup />
       </div>
     </>
   );
 };
+
+
 
 export default Home;
 Home.isProtected = false;
