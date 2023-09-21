@@ -5,19 +5,14 @@ import {
 } from '@ant-design/icons';
 import { message } from 'antd';
 import React from 'react';
+import { MessagePayload, iconType } from './notification.types';
 
-interface MesgPayload {
-  content: string;
-  icon: JSX.Element;
-  duration?: number;
-}
 const DisplayNotification = (
-  type: string,
+  type: iconType,
   messageCame: string,
   displayMessageDuration?: number
 ) => {
-  // console.log("re", type);
-  const getIcon = (type: string) => {
+  const getIcon = (type: iconType) => {
     switch (type) {
       case 'warning':
         return <InfoCircleOutlined rev={undefined} />;
@@ -29,7 +24,7 @@ const DisplayNotification = (
         return <CheckCircleOutlined rev={undefined} />;
     }
   };
-  const messageObj: MesgPayload = {
+  const messageObj: MessagePayload = {
     content: messageCame,
     icon: getIcon(type),
     duration: displayMessageDuration
