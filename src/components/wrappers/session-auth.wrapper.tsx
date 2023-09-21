@@ -15,7 +15,7 @@ export default function SessionAuthWrapper({ children }: Props) {
   }
 
   if (!isAuthenticated) {
-    router.push('/');
+    router.push('/login');
     return null;
   }
 
