@@ -1,0 +1,64 @@
+/* Modal */
+.dashboard_modal_header_box {
+  position: relative;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dashboard_modal_close_icon_btn_box {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 121, 63, 0.2);
+  transition: 0.3s all ease;
+}
+.dashboard_modal_close_icon_btn_box:hover {
+  background-color: rgba(255, 121, 63, 0.25);
+}
+.dashboard_modal_body_box {
+  padding: 14px 20px;
+}
+.dashboard_modal_footer_box {
+  padding: 10px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+/* Category */
+.category_box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.category_title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.category_description {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.category_title_with_toggle_box {
+  display: flex;
+  justify-content: space-between;
+}
+/* Toggle button  */
+.category_toggle_button {
+  border-color: #ff793f;
+}
+.category_toggle_button:checked {
+  background-color: #ff793f;
+  border-color: #ff793f;
+}
+.category_toggle_button:focus {
+  border-color: #ff793f;
+  box-shadow: 0 0 0 0.25rem rgb(255 121 63 / 25%);
+}

@@ -1,0 +1,207 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1e272e;
+}
+
+.owl_link_input_field {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 121, 63, 0.7);
+  background-color: transparent;
+  font-weight: 400;
+  width: 100%;
+  color: #1e272e;
+  box-shadow: none;
+}
+.owl_link_input_field:focus {
+  background-color: transparent;
+  border: 1px solid rgba(255, 121, 63, 1);
+  box-shadow: none;
+}
+
+.owl_link_checkbox_field {
+  border: 1px solid rgba(255, 121, 63, 0.7);
+}
+.owl_link_checkbox_field:focus {
+  border: 1px solid rgba(255, 121, 63, 1);
+  box-shadow: 0 0 0 0.25rem rgba(255, 121, 63, 0.25);
+}
+.owl_link_checkbox_field:checked {
+  background-color: #ff793f;
+  border: 1px solid rgba(255, 121, 63, 1);
+}
+
+.owl_link_dashboard_outline_button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 1px solid #ff793f;
+  border-radius: 6px;
+  color: #ff793f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.owl_link_dashboard_outline_button:hover {
+  color: #ff793f;
+  background-color: rgba(255, 121, 63, 0.05);
+}
+.owl_link_dashboard_outline_button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 121, 63, 0.25);
+}
+
+.owl_link_dashboard_filled_button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #ff793f;
+  border: 1px solid #ff793f;
+  border-radius: 6px;
+  color: white;
+}
+.owl_link_dashboard_filled_button:hover {
+  background-color: #ff793f;
+  color: white;
+  filter: brightness(1.1);
+  border: 1px solid #ff793f;
+  box-shadow: 0 0 0 0.25rem rgba(255, 121, 63, 0.25);
+}
+.owl_link_dashboard_filled_button:focus {
+  background-color: #ff793f;
+  color: white;
+  border: 1px solid #ff793f;
+  box-shadow: 0 0 0 0.25rem rgba(255, 121, 63, 0.25);
+}
+
+/* Dropdown */
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-menu {
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dropdown-item {
+  padding: 8px 14px;
+  font-size: 16px;
+}
+.dropdown-item:active {
+  color: #1e272e;
+  text-decoration: none;
+  background-color: #e9ecef;
+}
+
+/* Get btc domain popup */
+.get_btc_domain_blur_bg {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+.get_btc_domain_popup_flex_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.get_btc_domain_content_box {
+  max-width: 500px;
+  width: 100%;
+  padding: 50px 20px 30px;
+  background-color: white;
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  text-align: center;
+}
+.get_btc_domain_content_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff793f;
+  margin-top: 44px;
+  margin-bottom: 0px;
+  line-height: 1.4;
+}
+.get_btc_domain_content_description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(30, 39, 46, 0.6);
+  margin-top: 24px;
+  margin-bottom: 0px;
+  line-height: 1.4;
+}
+
+/* Social */
+.owl_link_social_input_field {
+  padding-left: 54px;
+}
+
+/* Horizontal line */
+hr {
+  margin: 30px 0px;
+  opacity: 0.13;
+}
+
+/* Pagination */
+.page-link {
+  color: #ff793f;
+}
+.page-link:hover {
+  color: #ff793f;
+}
+.page-link:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 121, 63, 0.25);
+}
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #ff793f;
+  border-color: #ff793f;
+}
+
+/* Custom Placeholder */
+::-webkit-input-placeholder {
+  color: rgba(30, 41, 46, 0.3);
+  color: rgb(30, 41, 46, 0.3);
+} /* Chrome/Opera/Safari */
+::-moz-placeholder {
+  color: rgba(30, 41, 46, 0.3);
+  color: rgb(30, 41, 46, 0.3);
+} /* Firefox 19+ */
+:-ms-input-placeholder {
+  color: rgba(30, 41, 46, 0.3);
+  color: rgb(30, 41, 46, 0.3);
+} /* IE 10+ */
+:-moz-placeholder {
+  color: rgba(30, 41, 46, 0.3);
+  color: rgb(30, 41, 46, 0.3);
+} /* Firefox 18- */
+
+/* Scrollbar */
+/* Vertical width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Horizontal height */
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 121, 63, 0.2);
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 121, 63, 0.2);
+}

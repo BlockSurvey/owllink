@@ -2,6 +2,7 @@ import DashboardLayoutComponent from '@/components/dashboard/dashboard-layout.co
 import { MyPage } from '@/types/my-page.type';
 
 const Dashboard: MyPage = () => {
+
   // Variables
 
   // States
@@ -12,8 +13,9 @@ const Dashboard: MyPage = () => {
 
   return (
     <>
-      <div className="w-full">
+      <div className="w-full h-full">
         <DashboardLayoutComponent />
+        {/* <Button onClick={async () => await signOut()}>Sign out</Button> */}
       </div>
     </>
   );

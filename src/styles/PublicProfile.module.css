@@ -1,0 +1,237 @@
+.profile_outline_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 48px;
+}
+
+.profile_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 640px;
+  width: 100%;
+  height: 100%;
+}
+
+.profile_image_box {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.profile_username_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+}
+
+.profile_username {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.profile_user_bio {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.profile_user_links_box {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 18px;
+  width: 100%;
+  padding-inline-start: 0px;
+}
+.profile_user_links_list_box {
+  list-style: none;
+  box-shadow: 0px 4px 10px rgba(50, 50, 90, 0.2);
+  border-radius: 6px;
+  width: 100%;
+  transition: 0.3s all ease;
+}
+.profile_user_links_list_box:hover {
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transform: translateY(-0.1rem);
+}
+.profile_user_link_flex_box {
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1e272e !important;
+  cursor: pointer;
+  position: relative;
+}
+.profile_user_link_image {
+  width: 40px;
+  height: 40px;
+  background-color: #1e272e;
+  border-radius: 6px;
+  position: absolute;
+  left: 8px;
+}
+.profile_user_link_title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1e272e;
+}
+
+.profile_owl_link_logo_box {
+  margin-top: auto;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile_owl_link_logo_link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.profile_owl_link_logo_icon {
+  width: 28px;
+  fill: rgba(255, 121, 63, 0.5);
+  transition: fill 0.2s ease;
+}
+.profile_owl_link_logo_link:hover .profile_owl_link_logo_icon {
+  fill: rgba(255, 121, 63, 1);
+}
+
+/* Social */
+.profile_owl_link_social_icons_list_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 18px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  padding-inline-start: 0px;
+}
+.profile_owl_link_social_icon_box {
+  text-decoration: none;
+  color: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.profile_owl_link_social_icon_box:hover {
+  transform: scale(1.1);
+}
+
+/* NFT's */
+.profile_nft_gallery {
+  width: 100%;
+  max-height: 0px;
+  height: 0%;
+  transition: 0.5s all ease;
+  overflow: hidden;
+}
+.profile_nft_gallery_show {
+  max-height: 520px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  transition: 0.5s all ease;
+  cursor: initial;
+}
+.profile_nft_gallery_image_box {
+  padding: 15px 30px 30px 30px;
+  width: 100%;
+}
+/* Nft list */
+.nft_layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+}
+.nft_box {
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(50, 50, 90, 0.2);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s all ease;
+}
+.nft_box:hover {
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transform: translateY(-0.1rem);
+}
+.nft_image_box {
+  aspect-ratio: 1 /1;
+  background-color: #f4f4f6;
+}
+.nft_image {
+  /* max-width: 100%;
+    max-height: 100%; */
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.nft_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
+.nft_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.nft_name::first-letter {
+  text-transform: capitalize;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .root_container {
+    width: 95%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .root_container {
+    width: 95%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .root_container {
+    width: 95%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
