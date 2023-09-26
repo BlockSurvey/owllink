@@ -1,7 +1,7 @@
 import SessionAuthWrapper from '@/components/wrappers/session-auth.wrapper';
 import { useThemeStore } from '@/stores/theme.store';
-import { themeDarkVars } from '@/styles/antDesignThemeDark.const';
-import { themeLightVars } from '@/styles/antDesignThemeLight.const';
+import { themeDarkVars } from '@/styles/theme/antDesignThemeDark.const';
+import { themeLightVars } from '@/styles/theme/antDesignThemeLight.const';
 import '@/styles/globals.css';
 import { MyAppProps } from '@/types/my-page.type';
 import { NhostClient, NhostProvider } from '@nhost/nextjs';
